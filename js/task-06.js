@@ -6,8 +6,10 @@ function onInputFormBlur(event) {
     Number(event.currentTarget.value.length) ===
     Number(inputForm.dataset.length)
   ) {
-    inputForm.id = "validation-input.valid";
+    inputForm.classList.add("valid");
+    inputForm.classList.remove("invalid");
   } else {
-    inputForm.id = "validation-input.invalid";
+    inputForm.classList.add("invalid");
+    inputForm.classList.remove("valid");
   }
 }
