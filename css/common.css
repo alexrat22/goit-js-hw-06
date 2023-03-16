@@ -31,3 +31,8 @@ button {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.galery-item {
+  width: 320px;
+  height: 180px;
+}
