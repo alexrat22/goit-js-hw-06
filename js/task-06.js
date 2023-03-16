@@ -1,4 +1,5 @@
 const inputForm = document.querySelector("input");
+
 inputForm.addEventListener("blur", onInputFormBlur);
 
 function onInputFormBlur(event) {
