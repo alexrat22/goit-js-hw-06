@@ -18,14 +18,12 @@ refs.btnDestroy.addEventListener("click", destroyBoxes);
 const arrayOFDivs = [];
 
 function createBoxes(amount) {
-  let startWidth = 30;
-  let startHeight = 30;
+  let startSizes = 30;
   for (let i = 0; i < amount.currentTarget.value; i += 1) {
     const newDiv = document.createElement("div");
-    newDiv.style.width = startWidth + "px";
-    startWidth += 10;
-    newDiv.style.height = startHeight + "px";
-    startHeight += 10;
+    newDiv.style.width = startSizes + "px";
+    newDiv.style.height = startSizes + "px";
+    startSizes += 10;
     newDiv.style.backgroundColor = getRandomHexColor();
     arrayOFDivs.push(newDiv);
   }
